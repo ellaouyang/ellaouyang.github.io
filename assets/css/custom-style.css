@@ -1,0 +1,56 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.w3l-contact {
+    background-image: url('../images/33.jpg'); /* Add background image */
+    background-size: cover; /* Makes sure the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    padding: 40px 0; /* Existing padding */
+    color: white; /* Change text color for better visibility */
+    position: relative; /* Allows for positioning of overlay */
+}
+
+.contact-info {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.contact-info a {
+    color: #007bff; /* Bootstrap primary color */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form .form-control {
+    border-radius: 20px; /* Rounded inputs */
+}
+
+.contact-form button {
+    border-radius: 20px; /* Rounded button */
+    padding: 10px 20px;
+}
+
+/* Optional: Add an overlay to improve text visibility */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+    padding: 30px; /* Add padding for the overlay */
+    border-radius: 8px; /* Optional: Rounding the corners */
+    position: relative; /* Needed for proper layering */
+    z-index: 1; /* Ensure overlay is above the background image */
+}
+
+/* Ensure the text inside the overlay is visible */
+.overlay h3,
+.overlay p {
+    color: white; /* Text color for headings and paragraphs */
+}
